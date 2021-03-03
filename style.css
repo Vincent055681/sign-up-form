@@ -1,0 +1,95 @@
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: 0;
+          box-sizing: 0;
+}
+
+body {
+  font-family: Segoe UI, Helvetica, sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #646464;
+  height: 100vh;
+}
+
+main {
+  max-width: 350px;
+  background: white;
+  width: 70%;
+  color: #707070;
+  border-radius: 5px;
+}
+
+h1 {
+  margin: 20px 0 0 0;
+  text-align: center;
+  font-size: 24px;
+}
+
+form {
+  padding: 20px;
+}
+
+form input {
+  font-family: Segoe UI, Helvetica, sans-serif;
+  border-radius: 5px;
+  border: solid 2px #CFCFCF;
+  padding: 5px 0;
+  background: #eeeeee;
+  margin-top: 5px;
+  padding-left: 10px;
+}
+
+form .login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  text-align: center;
+}
+
+form .login p {
+  margin: 10px 0;
+  padding: 5px 40px;
+  border-radius: 4px;
+  background: #9DADDF;
+  color: white;
+  cursor: not-allowed;
+}
+
+.input__bloc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 5px 0;
+}
+
+.input__bloc .error {
+  display: none;
+  color: #d65757;
+  font-size: 14px;
+}
+
+.succes {
+  display: none;
+  color: green;
+}
+/*# sourceMappingURL=style.css.map */

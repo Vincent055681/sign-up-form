@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- CSS -->
+    <link href="/style.css" rel="stylesheet">
+
+
+    <title>Inscription</title>
+</head>
+<body>
+    <main>
+        <h1 class="title">S'inscrire</h1>
+        <form class="form">
+            <div class="input__bloc">
+                <label for="name">Pseudo</label>
+                <input class="input" type="text" id="name" name="user_name" placeholder="Pseudo" autocomplete="on">
+                <p class="error" id="error-length">Votre pseudo doit faire entre 4 et 24 caractères</p>
+                <p class="error" id="error-symbol">Votre pseudo ne doit contenir que des lettres, des chiffres, et les symboles suivant _ -</p>
+            </div>
+            <div class="input__bloc">
+                <label for="email">Adresse mail</label>
+                <input class="input" type="email" id="email" name="user_email" placeholder="Adresse mail" autocomplete="email">
+                <p class="error" id="error-mail">Votre adresse mail n'est pas valide</p>
+            </div>
+            <div class="input__bloc">
+                <label for="password">Mot de passe</label>
+                <input class="input" type="password" id="password" name="user_password" placeholder="Mot de passe" autocomplete="new-password">
+                <p class="error" id="error-password">Votre mot de passe doit contenir au moins 10 caractères, 1 chiffre et un caractère spécial</p>
+            </div>
+            <div class="input__bloc">
+                <label for="password_check">Confirmez votre mot de passe</label>
+                <input class="input" type="password" id="password_check" name="user_password_check" placeholder="Confirmez le mot de passe" autocomplete="off">
+                <p class="error" id="error-password-check">Vos mots de passe ne correspondent pas</p>
+            </div>
+            <div class="login">
+                <p>Connexion</p>
+            </div>
+            <p class="succes">Votre compte a été crée avec succès !</p>
+        </form>
+    </main>
+    <script src="app.js"> </script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+*, ::before, ::after { 
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body {
+    font-family: Segoe UI, Helvetica, sans-serif;
+    @include flex-center();
+    background-color : #646464;
+    height: 100vh;
+}
+
+main {
+    max-width: 350px;
+    background: white;
+    width: 70%;
+    color: #707070;
+    border-radius: 5px;
+}
+
+h1 {
+    margin: 20px 0 0 0;
+    text-align: center;
+    font-size: 24px;
+}
+
+form {
+    padding: 20px;
+    input {
+        font-family: Segoe UI, Helvetica, sans-serif;
+        border-radius: 5px;
+        border: solid 2px #CFCFCF;
+        padding: 5px 0;
+        background: #eeeeee;
+        margin-top: 5px;
+        padding-left: 10px;
+    }
+    .login {
+        @include flex-center();
+        width: 100%;
+        text-align: center;
+        p {
+            margin: 10px 0;
+            padding: 5px 40px;
+            border-radius: 4px;
+            background : #9DADDF;
+            color: white;
+            cursor: not-allowed;
+        }
+    }
+}
+
+.input__bloc {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 0;
+    & .error {
+        display: none;
+        color: rgb(214, 87, 87);
+        font-size: 14px;
+    }
+}
+
+.succes {
+    display: none;
+    color: green;
+}
